@@ -27,7 +27,7 @@ Separate identities, approximations, observations, and hypotheses. State the con
 
 ## Visual
 
-Produce a plot, diagram, or interactive demonstration that directly explains the requested point. Use [whiteboard](../whiteboard/SKILL.md) when the answer needs a staged derivation or connected visual story.
+Produce a plot, diagram, or interactive demonstration that directly explains the requested point. Use [whiteboard](../whiteboard/SKILL.md) when the user wants to explore the underlying research ideas or mathematical questions together; that mode does not require a visual.
 
 Prefer an existing relevant artifact when it already answers the question. Use a compact diagram for structure, a measured plot for empirical comparisons, and interaction when changing a parameter or moving through time teaches something useful. Clearly label synthetic or schematic examples so they cannot be mistaken for experiment results.
 

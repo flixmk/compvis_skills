@@ -1,6 +1,6 @@
 ---
 name: communication
-description: Explain research and technical work in the user's terminology, choosing an appropriate level of detail for answers, experiment reports, and whiteboard walkthroughs.
+description: Explain research and technical work in the user's terminology, choosing an appropriate level of detail for answers, experiment reports, and conceptual whiteboard discussions.
 ---
 
 # Communication
@@ -11,7 +11,7 @@ Lead with the answer to the user's actual question, then provide the evidence or
 
 - Use [explanations](explanations/SKILL.md) for quick, precise, or visual explanations of a concept, implementation, or result.
 - Use [experiment reports](experiment_report/SKILL.md) to report runs, compare results, or assess what the available experiments establish.
-- Use [whiteboard](whiteboard/SKILL.md) for a connected visual walkthrough of a mechanism, derivation, or data flow.
+- Use [whiteboard](whiteboard/SKILL.md) for conceptual research discussions, mathematical exploration, and bigger-picture questions about a project or subproblem.
 
 Read only the modes needed by the request. A report can contain an explanatory diagram without becoming a separate presentation.
 

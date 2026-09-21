@@ -1,39 +1,28 @@
 ---
 name: whiteboard
-description: Build a visual walkthrough of a research mechanism, mathematical derivation, or code/data flow when the user asks for a whiteboard explanation or needs a connected sequence of diagrams.
+description: Explore research ideas, mathematical reasoning, and the bigger picture as a fellow research colleague. Use for whiteboard discussions about an entire project, a subproblem, or a specific conceptual question.
 ---
 
-# Whiteboard walkthroughs
+# Whiteboard
 
-Build the walkthrough around the question the user wants to understand. Use their vocabulary and mathematical conventions. Inspect the relevant code or result artifacts before drawing a claimed implementation or measured behavior.
+Treat whiteboard as a state of mind: think together like researchers at a board. Focus on the ideas, relationships, and questions that matter at the level the user wants to discuss.
 
-## Build the story
+## Frame the discussion
 
-Choose a connected sequence suited to the question:
+Start from the user's question and terminology. Explore the whole project's purpose, the role of a subproblem, or a specific mathematical object as appropriate. Make the central question and assumptions clear without turning the conversation into a formal report.
 
-1. Establish the objects, starting state, and baseline.
-2. Show the operation, intervention, or change, labeling what is held fixed.
-3. Show how that change propagates through the relevant steps.
-4. Connect the consequence to the original question and identify what the evidence leaves unresolved.
+Keep implementation details and practical constraints out of the foreground unless the user brings them into scope or they are essential to the conceptual question. An idea does not need an immediate implementation or experiment plan to be worth discussing.
 
-Use as few panels as the explanation needs; a single diagram is enough for a simple flow. Give each panel one question or takeaway. Reuse symbols, colors, sample identities, and spatial positions so the reader can follow the same object across panels.
+## Reason together
 
-For diffusion, mark time direction and distinguish the state, model prediction, solver update, and final metric. Connect equations to the corresponding arrows or transformations. Do not draw a causal arrow from a correlation unless it is explicitly labeled as a hypothesis.
+Develop the argument in connected steps. Use definitions, equations, thought experiments, limiting cases, and counterexamples where they help reveal the structure of the problem. Introduce new notation only when it earns its place, and connect formal statements back to their meaning.
 
-## Choose a usable visual
+Explore promising conjectures freely while distinguishing assumptions, established results, and speculation. Question a premise when there is a reason to doubt it, explain the consequence, and consider alternatives as a research colleague would. An unresolved question can be a useful outcome; do not force certainty or a practical recommendation.
 
-- Use Mermaid or a simple vector diagram for compact architecture and data-flow explanations.
-- Use standard plotting tools for empirical curves, scientific figures, and exportable results. Reuse existing summaries before recomputing expensive tensors.
-- Use an interactive view when a time slider, parameter change, or linked selection reveals behavior a static image would hide. Keep the default view understandable and label controls with their scientific meaning.
+Use a sketch or diagram when it helps the discussion. Whiteboard mode does not require a visual artifact, slide sequence, or polished deliverable.
 
-Label axes, units, color meanings, and baselines. Use comparable scales for comparable panels and mark any projection or normalization that changes interpretation. Do not rely on color alone; add labels or line styles. Distinguish measured data from toy examples and schematic geometry, including in captions.
+## Stay at the intended level
 
-## Deliver and check
+Follow the conceptual thread rather than defaulting to code inspection, implementation advice, resource planning, or a checklist of next actions. Bring in existing project evidence when it bears on the idea, without making a repository audit a prerequisite for discussion.
 
-Show the visual with a short guided reading, not just a path to an unseen file. Supply a viewable/exportable artifact when the user needs to keep or share it. Use absolute local paths in user-facing links and image embeds. Keep bulky generated files on scratch according to the active repo's storage rules, and perform compute-heavy generation inside an allocation.
-
-Inspect the rendered output for legible labels, clipping, arrow direction, consistent legends, and agreement between equations and graphics. Check interactive controls if present. Explain the main takeaway and the limitation needed to avoid overreading the picture.
-
-## Local example
-
-The [baseline-relative visual story](/export/home/ra63vex/dev/causal_tread/experiments_mlrc/representation/rep_far_plus_lowfreq_visual_story_v1/README.md) organizes existing summaries into successive questions about family comparisons, synergy, transport versus reuse, spatial patterns, and variation across samples. Reuse the pattern of one question per panel; do not assume its five-panel layout or historical claims fit another task.
+When useful, draw together what became clearer, which assumption carries the argument, or which question remains open. Move into implementation or experimental planning when the user asks for that shift.
